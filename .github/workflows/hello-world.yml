@@ -36,7 +36,10 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
 printer:
-  runs-one: ubuntu-latest
+  name: Impressora
+  runs-on: ubuntu-latest
+  needs:
+    - hello-world
 
   steps:
     - name: Impressora 1
